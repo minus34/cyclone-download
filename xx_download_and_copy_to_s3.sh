@@ -18,8 +18,3 @@ aws --profile=${AWS_PROFILE} s3 sync ${WORKING_FOLDER} s3://minus34.com/opendata
 #crontab -l  # list all cron jobs
 #
 #@hourly /Users/hughsaalmans/git/minus34/cyclone-download/xx_download_and_copy_to_s3.sh
-
-
-
-
-
