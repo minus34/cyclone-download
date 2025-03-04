@@ -7,7 +7,7 @@ WORKING_FOLDER="/Users/$(whoami)/tmp/bom"
 curl --insecure "${FTP_URL}/IDQ65248.zip" -o "${WORKING_FOLDER}/IDQ65248.zip"
 curl --insecure "${FTP_URL}/IDQ65252.zip" -o "${WORKING_FOLDER}/IDQ65252.zip"
 
-aws --profile=${AWS_PROFILE} s3 sync ${WORKING_FOLDER} s3://minus34.com/opendata/bom/cyclone/2025/alfred --acl public-read
+aws --profile=${AWS_PROFILE} s3 cp ${WORKING_FOLDER} s3://minus34.com/opendata/bom/cyclone/2025/alfred --acl public-read --recursive
 
 
 
