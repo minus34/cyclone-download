@@ -11,10 +11,17 @@ aws --profile=${AWS_PROFILE} s3 cp ${WORKING_FOLDER} s3://minus34.com/opendata/b
 
 
 
-# crontab commands
 
-#crontab -e  # i to start editing, ESC to stop, :wq to save and exit
+# make script executable
+#chmod a+x /Users/hughsaalmans/git/minus34/cyclone-download/xx_download_and_copy_to_s3.sh
+
+# crontab commands
+#
+# crontab -e  # i to start editing, ESC to stop, :wq to save and exit
 #
 #crontab -l  # list all cron jobs
+#
+#SHELL=/bin/bash
+#PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 #
 #@hourly /Users/hughsaalmans/git/minus34/cyclone-download/xx_download_and_copy_to_s3.sh
